@@ -268,7 +268,7 @@
   @media (min-width:860px){ .about-grid{ grid-template-columns:0.9fr 1.1fr; align-items:start; } }
   .avatar{
     background:var(--navy); border-radius:10px;
-    aspect-ratio:4/5; position:relative; overflow:hidden;
+    aspect-ratio:400/498; position:relative; overflow:hidden;
     padding:14px;
   }
   .avatar::after{
@@ -280,13 +280,13 @@
   .net .dom rect{ stroke:var(--coral); }
   .net .svc rect{ stroke:var(--royal); }
   .net .node text{ fill:#fff; font:600 11.5px 'Montserrat',sans-serif; }
-  .net .svc text{ font-size:10.5px; fill:#dbe4f0; }
+  .net .svc text{ font-size:12px; fill:#dbe4f0; }
   .net .flow{ fill:none; stroke-width:1.5; stroke-dasharray:3 6; animation:flow 1.6s linear infinite; }
   .net .flow.in{ stroke:var(--coral); }
   .net .flow.out{ stroke:var(--royal); }
   .net .hub{ fill:url(#hubGrad); }
   .net .hubtxt{ fill:#fff; font:800 18px 'Montserrat',sans-serif; letter-spacing:0.02em; }
-  .net .pulse{ fill:none; stroke:#fff; stroke-opacity:.5; stroke-width:1.5; transform-origin:200px 250px; animation:pulse 3.6s ease-out infinite; }
+  .net .pulse{ fill:none; stroke:#fff; stroke-opacity:.5; stroke-width:1.5; transform-origin:200px 170px; animation:pulse 3.6s ease-out infinite; }
   .net .pulse.p2{ animation-delay:1.8s; }
   .net .dot{ offset-rotate:0deg; offset-distance:0%; opacity:0; animation:travel 2.8s ease-in-out infinite; }
   .net .dot.in{ fill:var(--coral); }
@@ -495,17 +495,17 @@
       </div>
       <div class="about-grid">
         <div class="avatar">
-          <svg class="net" viewBox="0 0 400 500" role="img" aria-label="HR, financiële administratie en projecten komen samen bij RVF Dienstverlening en vertalen zich naar interim management, projectleiding, ERP-implementatie en procesoptimalisatie">
+          <svg class="net" viewBox="0 0 400 470" role="img" aria-label="HR, financiële administratie en projecten komen samen bij RVF Dienstverlening en vertalen zich naar interim management, finance en control, managementinformatie, projectleiding, ERP-implementatie en procesoptimalisatie">
             <defs>
               <linearGradient id="hubGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E63946"/><stop offset="1" stop-color="#2563EB"/></linearGradient>
             </defs>
-            <path class="flow in" d="M70 98 C70 160 200 150 200 208"/><path class="flow in" d="M200 98 C200 160 200 150 200 208"/><path class="flow in" d="M330 98 C330 160 200 150 200 208"/><path class="flow out" d="M200 292 C200 350 55 350 55 408"/><path class="flow out" d="M200 292 C200 350 150 350 150 408"/><path class="flow out" d="M200 292 C200 350 250 350 250 408"/><path class="flow out" d="M200 292 C200 350 345 350 345 408"/>
-            <circle class="pulse" cx="200" cy="250" r="44"/>
-            <circle class="pulse p2" cx="200" cy="250" r="44"/>
-            <circle class="hub" cx="200" cy="250" r="42"/>
-            <text class="hubtxt" x="200" y="257" text-anchor="middle">RVF</text>
-            <g class="node dom"><rect x="22" y="50" width="96" height="48" rx="10"/><text x="70" y="74" text-anchor="middle">HR</text></g><g class="node dom"><rect x="152" y="50" width="96" height="48" rx="10"/><text x="200" y="69" text-anchor="middle">Financiële</text><text x="200" y="82" text-anchor="middle">administratie</text></g><g class="node dom"><rect x="282" y="50" width="96" height="48" rx="10"/><text x="330" y="74" text-anchor="middle">Projecten</text></g><g class="node svc"><rect x="10" y="408" width="90" height="48" rx="10"/><text x="55" y="429" text-anchor="middle">Interim</text><text x="55" y="443" text-anchor="middle">management</text></g><g class="node svc"><rect x="105" y="408" width="90" height="48" rx="10"/><text x="150" y="429" text-anchor="middle">Project-</text><text x="150" y="443" text-anchor="middle">leiding</text></g><g class="node svc"><rect x="205" y="408" width="90" height="48" rx="10"/><text x="250" y="429" text-anchor="middle">ERP-</text><text x="250" y="443" text-anchor="middle">implementatie</text></g><g class="node svc"><rect x="300" y="408" width="90" height="48" rx="10"/><text x="345" y="429" text-anchor="middle">Proces-</text><text x="345" y="443" text-anchor="middle">optimalisatie</text></g>
-            <circle class="dot in" r="3.5" style="offset-path:path('M70 98 C70 160 200 150 200 208');animation-delay:0.0s"/><circle class="dot in" r="3.5" style="offset-path:path('M200 98 C200 160 200 150 200 208');animation-delay:0.7s"/><circle class="dot in" r="3.5" style="offset-path:path('M330 98 C330 160 200 150 200 208');animation-delay:1.4s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 292 C200 350 55 350 55 408');animation-delay:2.1s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 292 C200 350 150 350 150 408');animation-delay:2.6s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 292 C200 350 250 350 250 408');animation-delay:3.1s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 292 C200 350 345 350 345 408');animation-delay:3.6s"/>
+            <path class="flow in" d="M70 86 C70 118 200 98 200 128"/><path class="flow in" d="M200 86 C200 118 200 98 200 128"/><path class="flow in" d="M330 86 C330 118 200 98 200 128"/><path class="flow out" d="M200 212 V273 Q200 285 170 285"/><path class="flow out" d="M200 212 V273 Q200 285 230 285"/><path class="flow out" d="M200 212 V333 Q200 345 170 345"/><path class="flow out" d="M200 212 V333 Q200 345 230 345"/><path class="flow out" d="M200 212 V393 Q200 405 170 405"/><path class="flow out" d="M200 212 V393 Q200 405 230 405"/>
+            <circle class="pulse" cx="200" cy="170" r="44"/>
+            <circle class="pulse p2" cx="200" cy="170" r="44"/>
+            <circle class="hub" cx="200" cy="170" r="42"/>
+            <text class="hubtxt" x="200" y="177" text-anchor="middle">RVF</text>
+            <g class="node dom"><rect x="22" y="38" width="96" height="48" rx="10"/><text x="70" y="65" text-anchor="middle">HR</text></g><g class="node dom"><rect x="152" y="38" width="96" height="48" rx="10"/><text x="200" y="57" text-anchor="middle">Financiële</text><text x="200" y="71" text-anchor="middle">administratie</text></g><g class="node dom"><rect x="282" y="38" width="96" height="48" rx="10"/><text x="330" y="65" text-anchor="middle">Projecten</text></g><g class="node svc"><rect x="24" y="262" width="146" height="46" rx="10"/><text x="97" y="289" text-anchor="middle">Interim management</text></g><g class="node svc"><rect x="230" y="262" width="146" height="46" rx="10"/><text x="303" y="289" text-anchor="middle">Projectleiding</text></g><g class="node svc"><rect x="24" y="322" width="146" height="46" rx="10"/><text x="97" y="349" text-anchor="middle">Finance &amp; Control</text></g><g class="node svc"><rect x="230" y="322" width="146" height="46" rx="10"/><text x="303" y="349" text-anchor="middle">ERP-implementatie</text></g><g class="node svc"><rect x="24" y="382" width="146" height="46" rx="10"/><text x="97" y="409" text-anchor="middle">Managementinformatie</text></g><g class="node svc"><rect x="230" y="382" width="146" height="46" rx="10"/><text x="303" y="409" text-anchor="middle">Procesoptimalisatie</text></g>
+            <circle class="dot in" r="3.5" style="offset-path:path('M70 86 C70 118 200 98 200 128');animation-delay:0.0s"/><circle class="dot in" r="3.5" style="offset-path:path('M200 86 C200 118 200 98 200 128');animation-delay:0.7s"/><circle class="dot in" r="3.5" style="offset-path:path('M330 86 C330 118 200 98 200 128');animation-delay:1.4s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 212 V273 Q200 285 180 285');animation-delay:2.1s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 212 V273 Q200 285 220 285');animation-delay:2.5s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 212 V333 Q200 345 180 345');animation-delay:2.9s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 212 V333 Q200 345 220 345');animation-delay:3.3s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 212 V393 Q200 405 180 405');animation-delay:3.7s"/><circle class="dot out" r="3.5" style="offset-path:path('M200 212 V393 Q200 405 220 405');animation-delay:4.1s"/>
           </svg>
         </div>
         <div class="about-copy">
