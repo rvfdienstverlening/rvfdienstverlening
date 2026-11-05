@@ -177,6 +177,33 @@
   .who-foot{margin-top:44px;color:var(--slate);max-width:44em}
   @media (max-width:760px){.who-grid{grid-template-columns:1fr}}
 
+
+  /* persoon */
+  .person{margin-top:40px;padding-left:24px;border-left:5px solid;border-image:linear-gradient(180deg,var(--coral),var(--royal)) 1}
+  .person b{display:block;font:800 clamp(1.5rem,2.6vw,2rem) 'Montserrat',sans-serif;letter-spacing:-.025em;color:#fff}
+  .person .role{display:block;margin:4px 0 14px;font:600 1rem 'Montserrat',sans-serif;color:#9fb3d9}
+  .person p{font-size:1rem;margin-bottom:20px;max-width:30em}
+  .person .btn{padding:11px 20px;font-size:.92rem}
+
+  /* opdrachten bij sectoren */
+  .who-item .ex{margin-top:14px;font-size:.95rem;color:var(--navy)}
+  .who-item .ex b{font:700 .92rem 'Montserrat',sans-serif}
+
+  /* praktisch */
+  .practical{padding:clamp(64px,8vw,112px) 0 clamp(24px,3vw,40px)}
+  .prac-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:start}
+  .facts{border-top:2px solid var(--navy)}
+  .facts div{display:grid;grid-template-columns:11em 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .facts dt{font:700 .95rem 'Montserrat',sans-serif}
+  .facts dd{color:var(--slate)}
+  .after{list-style:none;counter-reset:a;display:grid;gap:22px}
+  .after li{counter-increment:a;position:relative;padding-left:62px}
+  .after li::before{content:counter(a);position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;font:800 1.05rem 'Montserrat',sans-serif;display:grid;place-items:center}
+  .after b{display:block;font:700 1.1rem 'Montserrat',sans-serif;margin-bottom:2px}
+  .after span{color:var(--slate);font-size:1rem}
+  .prac-grid h3.sub{font-size:1.15rem;margin-bottom:16px}
+  @media (max-width:860px){.prac-grid{grid-template-columns:1fr}.facts div{grid-template-columns:1fr;gap:2px}}
+
   /* werkwijze */
   .how{background:var(--gray);padding:clamp(64px,8vw,112px) 0}
   .steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,36px);counter-reset:s;position:relative;margin-top:8px}
@@ -232,6 +259,7 @@
         <li><a href="#diensten">Diensten</a></li>
         <li><a href="#voor-wie">Voor wie</a></li>
         <li><a href="#werkwijze">Werkwijze</a></li>
+        <li><a href="#praktisch">Praktisch</a></li>
         <li><a class="btn btn-primary" href="#contact">Plan een gesprek</a></li>
       </ul>
     </nav>
@@ -248,7 +276,7 @@
         <a class="btn btn-primary" href="#contact">Plan een kennismaking</a>
         <a class="btn btn-line" href="#diensten">Bekijk de diensten</a>
       </div>
-      <p class="hero-note">Je spreekt rechtstreeks met de senior die het werk doet. Geen tussenlagen, geen overdracht aan juniors.</p>
+      <p class="hero-note">Je spreekt rechtstreeks met Richard Kruithof, de senior die het werk doet. Geen tussenlagen, geen overdracht aan juniors.</p>
     </div>
 
     <svg class="venn" viewBox="40 20 520 480" role="img" aria-label="Drie elkaar overlappende cirkels: HR, FA en Projecten. In het midden, waar ze samenkomen, staat RVF.">
@@ -375,6 +403,12 @@
     <div>
       <h2 id="pr-h">Geen pyramide. Geen overdracht.</h2>
       <p class="lead">Bij RVF krijg je rechtstreeks senior capaciteit. Korte lijnen, één aanspreekpunt en niemand die na de intake wordt vervangen door een junior.</p>
+      <div class="person">
+        <b>Richard Kruithof</b>
+        <span class="role">Interim manager en adviseur, finance, control en bedrijfsvoering</span>
+        <p>Ruim 25 jaar ervaring bij profit- en non-profitorganisaties. Van eindverantwoordelijke finance-rollen tot zelf de analyse, de rapportage en de implementatie doen.</p>
+        <a class="btn btn-line" href="https://www.linkedin.com/in/richard-kruithof-7071173" rel="noopener">Bekijk LinkedIn</a>
+      </div>
     </div>
     <div class="vals">
       <div class="val">
@@ -400,10 +434,14 @@
       <p class="lead">Waar subsidies, verantwoording en bestuurlijke besluitvorming de dagelijkse werkelijkheid zijn, scheelt ervaring een lange inwerktijd.</p>
     </div>
     <div class="who-grid">
-      <div class="who-item"><h3>Zorg &amp; welzijn</h3><p>Zorggroepen, eerstelijnszorg, jeugdgezondheidszorg, VVT en GGZ.</p></div>
-      <div class="who-item"><h3>Non-profit &amp; stichtingen</h3><p>Met subsidiestromen, verantwoording en governance als vaste onderdelen van het werk.</p></div>
-      <div class="who-item"><h3>Publiek &amp; semi-publiek</h3><p>Samenwerkingsverbanden en uitvoeringsorganisaties, met oog voor WNT, aanbesteding en bestuurlijke besluitvorming.</p></div>
-      <div class="who-item"><h3>Onderwijs &amp; cultuur</h3><p>Instellingen die tijdelijk financiële expertise of veranderkracht nodig hebben.</p></div>
+      <div class="who-item"><h3>Zorg &amp; welzijn</h3><p>Zorggroepen, eerstelijnszorg, jeugdgezondheidszorg, VVT en GGZ.</p>
+        <p class="ex"><b>Waar RVF voor wordt ingezet:</b> Interim hoofd finance, ERP-implementatie, integratie van administraties.</p></div>
+      <div class="who-item"><h3>Non-profit &amp; stichtingen</h3><p>Met subsidiestromen, verantwoording en governance als vaste onderdelen van het werk.</p>
+        <p class="ex"><b>Waar RVF voor wordt ingezet:</b> Subsidieverantwoording, begroting en jaarrekening, interne beheersing.</p></div>
+      <div class="who-item"><h3>Publiek &amp; semi-publiek</h3><p>Samenwerkingsverbanden en uitvoeringsorganisaties, met oog voor WNT, aanbesteding en bestuurlijke besluitvorming.</p>
+        <p class="ex"><b>Waar RVF voor wordt ingezet:</b> Financial control, managementinformatie, begrotingsproces.</p></div>
+      <div class="who-item"><h3>Onderwijs &amp; cultuur</h3><p>Instellingen die tijdelijk financiële expertise of veranderkracht nodig hebben.</p>
+        <p class="ex"><b>Waar RVF voor wordt ingezet:</b> Piekondersteuning rond jaarrekening, quick scan van de financefunctie.</p></div>
     </div>
     <p class="who-foot">Ook middelgrote ondernemingen en projectorganisaties die senior finance- of projectcapaciteit zoeken zijn welkom.</p>
   </div>
@@ -421,16 +459,43 @@
   </div>
 </section>
 
+<section class="practical" id="praktisch" aria-labelledby="pk-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="pk-h">Praktisch: zo werkt inhuren bij RVF</h2></div>
+    <div class="prac-grid">
+      <div>
+        <h3 class="sub">De basis op een rij</h3>
+        <dl class="facts">
+          <div><dt>Werkgebied</dt><dd>Randstad, hybride landelijk</dd></div>
+          <div><dt>Werkvorm</dt><dd>Op locatie, hybride of op afstand</dd></div>
+          <div><dt>Duur</dt><dd>Van een quick scan van enkele weken tot een interim-opdracht van maanden</dd></div>
+          <div><dt>Inhuur</dt><dd>Rechtstreeks of via je bemiddelaar</dd></div>
+          <div><dt>Tarief en beschikbaarheid</dt><dd>Op aanvraag, afhankelijk van de opdracht</dd></div>
+        </dl>
+      </div>
+      <div>
+        <h3 class="sub">Wat er gebeurt na je bericht</h3>
+        <ol class="after">
+          <li><b>Reactie binnen één werkdag</b><span>Je krijgt een reactie op je e-mail of telefoontje.</span></li>
+          <li><b>Kennismaking</b><span>Een kort gesprek, telefonisch of op locatie, over jouw vraagstuk.</span></li>
+          <li><b>Voorstel</b><span>Past RVF bij de vraag? Dan volgt een voorstel met aanpak en afspraken.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="contact" id="contact" aria-labelledby="ct-h">
   <div class="wrap">
     <div class="cta on-dark">
       <div>
         <h2 id="ct-h">Valt jouw vraagstuk tussen twee afdelingen in?</h2>
-        <p class="lead">Dan ben je bij RVF aan het goede adres. Neem vrijblijvend contact op.</p>
+        <p class="lead">Dan ben je bij RVF aan het goede adres. Neem vrijblijvend contact op. RVF reageert binnen één werkdag.</p>
       </div>
       <div class="cta-actions">
         <a class="btn btn-coral" href="mailto:info@rvfdienstverlening.nl?subject=Kennismaking%20RVF%20Dienstverlening">E-mail <span>info@rvfdienstverlening.nl</span></a>
         <a class="btn btn-line" href="tel:+31628703374">Bel <span>06 - 287 033 74</span></a>
+        <a class="btn btn-line" href="https://www.linkedin.com/in/richard-kruithof-7071173" rel="noopener">LinkedIn <span>Richard Kruithof</span></a>
       </div>
     </div>
   </div>
@@ -440,8 +505,8 @@
 <footer class="on-dark">
   <div class="values-bar"><ul><li>Betrouwbaar</li><li>Betrokken</li><li>Deskundig</li></ul></div>
   <div class="foot">
-    <span>RVF Dienstverlening | Ridderlaan 11, 3271 TG Mijnsheerenland | KvK 91361397</span>
-    <span><a href="mailto:info@rvfdienstverlening.nl">info@rvfdienstverlening.nl</a></span>
+    <span>RVF Dienstverlening | Ridderlaan 11, 3271 TG Mijnsheerenland | KvK 91361397 | btw NL004885174B18</span>
+    <span><a href="privacyverklaring.html">Privacyverklaring</a> &nbsp;|&nbsp; <a href="mailto:info@rvfdienstverlening.nl">info@rvfdienstverlening.nl</a></span>
   </div>
 </footer>
 
